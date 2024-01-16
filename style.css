@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+main {
+    margin-bottom: 20px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 20px;
+}
+.hero-img {
+    width: 400px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 20px;
+}
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+}
+.main-section h2 {
+    margin-bottom: 20px;
+}
+.description {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.plan {
+    position: relative;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.annual {
+    position: absolute;
+    left: 80px;
+    top: 20px;
+}
+.change {
+    font-size: .8rem;
+    color: hsl(245, 75%, 52%);
+
+}
+.btn {
+    border: none;
+    width: 300px;
+    padding: 15px 0;
+    border-radius: 10px;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: hsl(224, 23%, 55%);
+        transition: .6s ease;
+    }
+}
+.cancel {
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+    font-size: .8rem;
+
+    &:hover {
+        cursor: pointer;
+        color: black;
+    }
+}
+.attribution {
+    font-size: .8rem;
+}
+.attribution a {
+    color: hsl(224, 23%, 55%);
+}
+.attribution .author {
+    font-style: italic;
+
+    &:hover {
+        color: orange;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+}
